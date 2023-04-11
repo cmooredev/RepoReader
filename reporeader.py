@@ -3,6 +3,7 @@ import uuid
 from pathlib import Path
 import subprocess
 import tempfile
+from rank_bm25 import BM25Okapi
 from dotenv import load_dotenv
 from langchain.document_loaders import DirectoryLoader, TextLoader, NotebookLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -100,11 +101,17 @@ def load_and_index_files(repo_path):
     embeddings = OpenAIEmbeddings()
     index = None
     if documents:
-        index = Chroma.from_documents(documents, embeddings)
+        tokenized_documents = [doc.page_content.split(" ") for doc in documents]
+        index = BM25Okapi(tokenized_documents)
     return index, documents, file_type_counts, filenames  # Updated the return statement to include filenames
 
 
-def ask_question(similar_docs, question, llm_chain, repo_name, github_url, conversation_history, file_type_counts, filenames):
+def ask_question(documents, question, llm_chain, repo_name, github_url, conversation_history, file_type_counts, filenames):
+    tokenized_question = question.split(" ")
+    scores = index.get_scores(tokenized_question)
+    top_k_indices = sorted(range(len(scores)), key=lambda i: scores[i], reverse=True)[:4]  # Get the indices of the top 4 documents
+    similar_docs = [documents[i] for i in top_k_indices]
+
     numbered_documents = format_documents(similar_docs)
     file_type_summary = ", ".join([f"{count} {ext} files" for ext, count in file_type_counts.items()])
     file_name_summary = ", ".join([f"{i+1}. {filename}" for i, filename in enumerate(filenames)])
@@ -149,12 +156,19 @@ if __name__ == "__main__":
                 {numbered_documents}
 
                 Instructions: 
-                - Provide a detailed answer (when necessary) to the current question based on the provided documents and context.
-                - If you do not need to provide a detailed answer, simply provide a short answer.
-                - Refer to the conversation history for context regarding previous questions and answers.
+                - Provide a detailed, accurate, and relevant answer to the current question based on the provided documents and context.
+                - If the answer requires code snippets, include them in your response.
+                - When referring to specific files or sections in the documents, mention them by their number (e.g., "In document 2, ...").
+                - If the answer requires a step-by-step explanation or a list, use bullet points or numbered lists.
+                - Use the conversation history for context regarding previous questions and answers.
                 - If you cannot find a relevant answer, reply with 'I am not sure'.
                 - Do not make up any information; only work with the context and documents provided.
-                - MANDATORY: Follow instructions exactly as they are written above. 
+                - Only include information relevant to the question.  Don't add extra unnecessary information.
+                - MANDATORY: Follow instructions exactly as they are written above.
+
+                Answer Format:
+                - Start your answer with "Answer:" followed by your response.
+                - If your response has multiple parts, separate them with a newline.
 
                 Answer:
             """
@@ -171,17 +185,14 @@ if __name__ == "__main__":
                     user_question = input("\n" + WHITE + "Ask a question about the repository (type 'exit()' to quit): " + RESET_COLOR)
                     if user_question.lower() == "exit()":
                         break
-                    k = min(4, len(documents))
-                    similar_docs = index.similarity_search(user_question, k=k)
-
-                    if similar_docs:
-                        numbered_documents = format_documents(similar_docs)
-                        answer = ask_question(similar_docs, user_question, llm_chain, repo_name, github_url, conversation_history, file_type_counts, filenames)
-                        print(GREEN + '\nANSWER\n' + answer + RESET_COLOR + '\n')
-                        conversation_history += f"Question: {user_question}\nAnswer: {answer}\n"
+                    
+                    answer = ask_question(documents, user_question, llm_chain, repo_name, github_url, conversation_history, file_type_counts, filenames)
+                    print(GREEN + '\nANSWER\n' + answer + RESET_COLOR + '\n')
+                    conversation_history += f"Question: {user_question}\nAnswer: {answer}\n"
                 except Exception as e:
                     print(f"An error occurred: {e}")
                     break
+
 
         else:
             print("Failed to clone the repository.")
