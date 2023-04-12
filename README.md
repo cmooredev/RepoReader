@@ -7,12 +7,6 @@ Explore and ask questions about a GitHub code repository using OpenAI's GPT-3 la
 - Python 3.6+
 - OpenAI API key (set in the environment variable `OPENAI_API_KEY`)
 
-To install the dependencies, run the following command:
-
-
-  pip install langchain python-dotenv rank_bm25 openai
-
-
 ## Usage
 1. Set the OpenAI API key as an environment variable `OPENAI_API_KEY`.
 2. Run the script: `reporeader.py`
