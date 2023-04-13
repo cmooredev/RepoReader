@@ -27,7 +27,7 @@ def main():
             llm = OpenAI(api_key=OPENAI_API_KEY, temperature=0.2)
 
             template = """
-            Repo: {repo_name} ({github_url}) | Conv: {conversation_history} | Docs: {numbered_documents} | Q: {question}
+            Repo: {repo_name} ({github_url}) | Conv: {conversation_history} | Docs: {numbered_documents} | Q: {question} | FileCount: {file_type_counts} | FileNames: {filenames}
 
             Instr:
             1. Answer based on context/docs.
@@ -36,7 +36,6 @@ def main():
                 a. Purpose/features - describe.
                 b. Functions/code - provide details/samples.
                 c. Setup/usage - give instructions.
-                d. List files - share relevant names.
             4. Unsure? Say "I am not sure".
 
             Answer:
@@ -44,7 +43,7 @@ def main():
 
             prompt = PromptTemplate(
                 template=template,
-                input_variables=["repo_name", "github_url", "conversation_history", "question", "numbered_documents"]
+                input_variables=["repo_name", "github_url", "conversation_history", "question", "numbered_documents", "file_type_counts", "filenames"]
             )
 
             llm_chain = LLMChain(prompt=prompt, llm=llm)
