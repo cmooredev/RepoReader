@@ -11,7 +11,7 @@ from questions import ask_question, QuestionContext
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-if __name__ == "__main__":
+def main():
     github_url = input("Enter the GitHub URL of the repository: ")
     repo_name = github_url.split("/")[-1]
     repo_link = github_url
