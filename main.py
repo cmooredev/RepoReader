@@ -1,3 +1,4 @@
+#main.py
 import os
 import tempfile
 from dotenv import load_dotenv
@@ -14,7 +15,6 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 def main():
     github_url = input("Enter the GitHub URL of the repository: ")
     repo_name = github_url.split("/")[-1]
-    repo_link = github_url
     print("Cloning the repository...")
     with tempfile.TemporaryDirectory() as local_path:
         if clone_github_repo(github_url, local_path):
@@ -33,10 +33,10 @@ def main():
             1. Answer based on context/docs.
             2. Focus on repo/code.
             3. Consider:
-            a. Purpose/features - describe.
-            b. Functions/code - provide details/samples.
-            c. Setup/usage - give instructions.
-            d. List files - share relevant names.
+                a. Purpose/features - describe.
+                b. Functions/code - provide details/samples.
+                c. Setup/usage - give instructions.
+                d. List files - share relevant names.
             4. Unsure? Say "I am not sure".
 
             Answer:
