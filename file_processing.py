@@ -46,9 +46,9 @@ def load_and_index_files(repo_path):
             loader = None
             if ext == 'ipynb':
                 loader = NotebookLoader(str(repo_path), include_outputs=True, max_output_length=20,
-                                        remove_newline=True)
+                                        remove_newline=True,  loader_kwargs={"content_type": "text/plain"})
             else:
-                loader = DirectoryLoader(repo_path, glob=glob_pattern)
+                loader = DirectoryLoader(repo_path, glob=glob_pattern, loader_kwargs={"content_type": "text/plain"})
 
             loaded_documents = loader.load() if callable(loader.load) else []
             print(f'[LOG] {ext} loaded!')

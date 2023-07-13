@@ -17,6 +17,7 @@ IS_TEMP_DIR = False
 def main():
     # github_url = input("Enter the GitHub URL of the repository: ")
     github_url = r"https://github.com/Lightricks/dwh-data-model-transforms"
+    # github_url = r"https://github.com/cmooredev/RepoReader"
     repo_name = extract_repo_name(github_url)
     print("Cloning the repository...")
 
@@ -44,7 +45,7 @@ def main():
                 exit()
 
             print("Repository cloned. Indexing files...")
-            llm = OpenAI(api_key=OPENAI_API_KEY, temperature=0.2)
+            llm = OpenAI(api_key=OPENAI_API_KEY, temperature=0.3)
 
             template = """
             Repo: {repo_name} ({github_url}) | Conv: {conversation_history} | Docs: {numbered_documents} | Q: {question} | FileCount: {file_type_counts} | FileNames: {filenames}
