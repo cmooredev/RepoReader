@@ -5,10 +5,11 @@ import subprocess
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from rank_bm25 import BM25Okapi
-from langchain.document_loaders import DirectoryLoader, NotebookLoader
+from langchain.document_loaders import DirectoryLoader, NotebookLoader, UnstructuredFileLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from utils import clean_and_tokenize
 import unicodedata
+import traceback
 
 def extract_repo_name(repo_url):
     # Extract the part of the URL after the last slash and before .git
@@ -32,7 +33,9 @@ def clone_github_repo(github_url, local_path):
         return False
 
 def load_and_index_files(repo_path):
-    extensions = ['txt', 'md', 'markdown', 'rst', 'py', 'js', 'java', 'c', 'cpp', 'cs', 'go', 'rb', 'php', 'scala', 'html', 'htm', 'xml', 'json', 'yaml', 'yml', 'ini', 'toml', 'cfg', 'conf', 'sh', 'bash', 'css', 'scss', 'sql', 'gitignore', 'dockerignore', 'editorconfig', 'ipynb']
+    extensions = ['txt', 'md', 'markdown', 'rst', 'py', 'js', 'java', 'c', 'cpp', 'cs', 'go', 'rb', 'php', 'scala',
+                  'html', 'htm', 'xml', 'json', 'yaml', 'yml', 'ini', 'toml', 'cfg', 'conf', 'sh', 'bash', 'css',
+                  'scss', 'sql', 'gitignore', 'dockerignore', 'editorconfig', 'ipynb']
 
     file_type_counts = {}
     documents_dict = {}
@@ -42,11 +45,13 @@ def load_and_index_files(repo_path):
         try:
             loader = None
             if ext == 'ipynb':
-                loader = NotebookLoader(str(repo_path), include_outputs=True, max_output_length=20, remove_newline=True)
+                loader = NotebookLoader(str(repo_path), include_outputs=True, max_output_length=20,
+                                        remove_newline=True)
             else:
                 loader = DirectoryLoader(repo_path, glob=glob_pattern)
 
             loaded_documents = loader.load() if callable(loader.load) else []
+            print(f'[LOG] {ext} loaded!')
             if loaded_documents:
                 file_type_counts[ext] = len(loaded_documents)
                 for doc in loaded_documents:
@@ -59,6 +64,7 @@ def load_and_index_files(repo_path):
                     documents_dict[file_id] = doc
         except Exception as e:
             print(f"Error loading files with pattern '{glob_pattern}': {e}")
+            # print(traceback.format_exc())
             continue
 
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=3000, chunk_overlap=200)

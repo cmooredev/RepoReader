@@ -15,8 +15,8 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 IS_TEMP_DIR = False
 
 def main():
-    github_url = input("Enter the GitHub URL of the repository: ")
-    # github_url = r"https://github.com/Lightricks/dwh-data-model-transforms"
+    # github_url = input("Enter the GitHub URL of the repository: ")
+    github_url = r"https://github.com/Lightricks/dwh-data-model-transforms"
     repo_name = extract_repo_name(github_url)
     print("Cloning the repository...")
 

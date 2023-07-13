@@ -2,7 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/cont_path_repos" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/stat_path_repos" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/stat_path_repos/RepoReader" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms" vcs="Git" />
