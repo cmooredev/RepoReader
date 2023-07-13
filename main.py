@@ -6,18 +6,38 @@ from langchain import PromptTemplate, LLMChain
 from langchain.llms import OpenAI
 from config import WHITE, GREEN, RESET_COLOR, model_name
 from utils import format_user_question
-from file_processing import clone_github_repo, load_and_index_files
+from file_processing import clone_github_repo, load_and_index_files, is_repo_cloned as _is_repo_cloned, extract_repo_name
 from questions import ask_question, QuestionContext
 
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
+IS_TEMP_DIR = False
+
 def main():
     github_url = input("Enter the GitHub URL of the repository: ")
-    repo_name = github_url.split("/")[-1]
+    # github_url = r"https://github.com/Lightricks/dwh-data-model-transforms"
+    repo_name = extract_repo_name(github_url)
     print("Cloning the repository...")
+
+
     with tempfile.TemporaryDirectory() as local_path:
-        if clone_github_repo(github_url, local_path):
+
+        if not IS_TEMP_DIR:
+            local_path = 'stat_path_repos'
+
+            # check if the repo is already cloned
+            is_repo_cloned = _is_repo_cloned(github_url, local_path)
+            print(f'[LOG] is repo {repo_name} already cloned? {is_repo_cloned}')
+
+            # if the repo is already cloned in the static path, then skip cloning. If not, clone it in the static path
+            repo_condition = clone_github_repo(github_url, os.path.join(local_path, repo_name)) if not is_repo_cloned else True
+        else:
+            repo_condition = clone_github_repo(github_url, local_path)
+
+        print(f'[LOG] repo_condition: {repo_condition}')
+
+        if repo_condition:
             index, documents, file_type_counts, filenames = load_and_index_files(local_path)
             if index is None:
                 print("No documents were found to index. Exiting.")

@@ -8,6 +8,20 @@ from rank_bm25 import BM25Okapi
 from langchain.document_loaders import DirectoryLoader, NotebookLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from utils import clean_and_tokenize
+import unicodedata
+
+def extract_repo_name(repo_url):
+    # Extract the part of the URL after the last slash and before .git
+    repo_name = repo_url.split('/')[-1]
+    if repo_name.endswith('.git'):
+        repo_name = repo_name[:-4]  # remove .git from the end
+    return repo_name
+
+
+def is_repo_cloned(repo_url, path_dir):
+    repo_name = extract_repo_name(repo_url)
+    repo_path = os.path.join(path_dir, repo_name)
+    return os.path.isdir(repo_path)
 
 def clone_github_repo(github_url, local_path):
     try:
@@ -69,17 +83,29 @@ def search_documents(query, index, documents, n_results=5):
     bm25_scores = index.get_scores(query_tokens)
 
     # Compute TF-IDF scores
-    tfidf_vectorizer = TfidfVectorizer(tokenizer=clean_and_tokenize, lowercase=True, stop_words='english', use_idf=True, smooth_idf=True, sublinear_tf=True)
-    tfidf_matrix = tfidf_vectorizer.fit_transform([doc.page_content for doc in documents])
-    query_tfidf = tfidf_vectorizer.transform([query])
+    try:
+        tfidf_vectorizer = TfidfVectorizer(tokenizer=clean_and_tokenize, lowercase=True, stop_words='english', use_idf=True, smooth_idf=True, sublinear_tf=True, encoding="utf-8")
+        # Normalize and clean up the page content, handling any special characters
+        documents_cleaned = [unicodedata.normalize('NFKD', doc.page_content).encode('ascii', 'ignore').decode('utf-8') for
+                             doc in documents]
 
-    # Compute Cosine Similarity scores
-    cosine_sim_scores = cosine_similarity(query_tfidf, tfidf_matrix).flatten()
+        tfidf_matrix = tfidf_vectorizer.fit_transform(documents_cleaned)
+        query_tfidf = tfidf_vectorizer.transform([query])
 
-    # Combine BM25 and Cosine Similarity scores
-    combined_scores = bm25_scores * 0.5 + cosine_sim_scores * 0.5
+        # Compute Cosine Similarity scores
+        cosine_sim_scores = cosine_similarity(query_tfidf, tfidf_matrix).flatten()
 
-    # Get unique top documents
-    unique_top_document_indices = list(set(combined_scores.argsort()[::-1]))[:n_results]
+        # Combine BM25 and Cosine Similarity scores
+        combined_scores = bm25_scores * 0.5 + cosine_sim_scores * 0.5
+
+        # Get unique top documents
+        unique_top_document_indices = list(set(combined_scores.argsort()[::-1]))[:n_results]
+
+    except Exception as e:
+        print('[ERROR]: TfidfVectorizer')
+        print('[ERROR]: documents: {documents_cleaned}')
+        raise e
+
+
 
     return [documents[i] for i in unique_top_document_indices]
