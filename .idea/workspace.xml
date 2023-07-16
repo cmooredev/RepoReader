@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="92635ecf-d860-4c54-bc22-ed60222c6035" name="Changes" comment="try solving the loader error">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RepoReader.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/RepoReader.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_processing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/questions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms" beforeDir="false" afterPath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/_archive__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/_archive_abtest__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/ab_tests_arpu.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/ab_tests_arpu_hist.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/ab_tests_conversion_rate.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/ab_tests_conversion_rate_hist.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/ab_tests_daily_usage_retention.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/ab_tests_daily_usage_retention_hist.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/ab_tests_exports.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/ab_tests_exports_hist.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/ab_tests_filtered_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/ab_tests_reasons.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/ab_tests_reasons_hist.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/ab_tests_refunds.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/ab_tests_refunds_hist.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/ab_tests_rpd.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/ab_tests_rpd_hist.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/ab_tests_subscription_churn.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/ab_tests_subscription_churn_hist.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/ab_tests_subscriptions.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/ab_tests_subscriptions_hist.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/ab_tests_trials_conversion.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/ab_tests_trials_conversion_hist.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/antares_ab_tests_filtered_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/antares_android_ab_tests_filtered_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/antares_android_subscribers_on_launch.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/antares_subscribers_on_launch.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/editor_ab_tests_filtered_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/editor_subscribers_on_launch.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/facetune2_ab_tests_filtered_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/facetune2_android_ab_tests_filtered_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/facetune2_android_subscribers_on_launch.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/facetune2_subscribers_on_launch.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/ftvideo_ab_tests_filtered_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/ftvideo_subscribers_on_launch.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/lightwave_ab_tests_filtered_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/lightwave_subscribers_on_launch.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/phoenix_ab_tests_filtered_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/phoenix_subscribers_on_launch.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/pixaloop_android_ab_tests_filtered_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/pixaloop_android_subscribers_on_launch.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/quickart_ab_tests_filtered_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/quickart_subscribers_on_launch.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/quickshot_ab_tests_filtered_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/quickshot_android_ab_tests_filtered_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/quickshot_android_subscribers_on_launch.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/quickshot_subscribers_on_launch.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/unified_exports.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/venus_ab_tests_filtered_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/venus_subscribers_on_launch.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/videoleap_ab_tests_filtered_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/abtest/videoleap_subscribers_on_launch.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/_archive_agg_archive__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/active_by_date.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/_archive_agg_archive_archive__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/antares_app_background_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/antares_app_editor_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/antares_app_explorer_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/antares_app_export_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/antares_app_foregrounded_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/antares_app_image_imported_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/antares_app_subscription_screen_presented_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/antares_app_video_imported_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/antares_daily_ltid_panel.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/antares_ltid_panel.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/facetune2_app_background_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/facetune2_app_export_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/facetune2_app_features_exported_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/facetune2_app_features_used_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/facetune2_app_foregrounded_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/facetune2_app_image_imported_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/facetune2_app_subscription_screen_presented_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/facetune2_app_video_imported_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/facetune2_daily_ltid_panel.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/facetune2_ltid_panel.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/ftvideo_app_background_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/ftvideo_app_export_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/ftvideo_app_foreground_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/ftvideo_app_video_imported_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/new_device/_archive_agg_archive_archive_new_device__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/new_device/backgrounds_kpi_daily_device.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/new_device/daily_device.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/new_device/exports_kpi_daily_device.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/new_device/facetune2_app_backgrounds_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/new_device/facetune2_app_exports_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/new_device/facetune2_app_foregrounds_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/new_device/foregrounds_kpi_daily_device.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/new_device/ftvideo_app_backgrounds_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/new_device/ftvideo_app_exports_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/new_device/ftvideo_app_foregrounds_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/new_device/lightwave_app_backgrounds_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/new_device/lightwave_app_exports_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/new_device/lightwave_app_foregrounds_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/new_device/venus_app_backgrounds_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/new_device/venus_app_exports_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/new_device/venus_app_foregrounds_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/new_device/videoleap_app_backgrounds_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/new_device/videoleap_app_exports_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/new_device/videoleap_app_foregrounds_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/videoleap_app_background_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/archive/videoleap_app_foreground_inc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/cohorted_usage_by_date.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/daily_subscriptions_data/_archive_agg_archive_daily_subscriptions_data__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/daily_subscriptions_data/daily_subscriptions_data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/daily_subscriptions_data/device_last_active_day_by_date.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/daily_subscriptions_data/temp_auto_renew_by_sub_duration.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/daily_subscriptions_data/temp_auto_renew_status_by_date.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/daily_subscriptions_data/temp_subscription_by_date.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/daily_subscriptions_data/temp_transactions_by_date.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/date_installs.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/date_wau.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/usage_by_date_device.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/agg_archive/usage_running_by_date.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/backup.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/boardtricks/_archive_boardtricks_boardtricks__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/boardtricks/boardleap_arpu.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/boardtricks/boardleap_cancellation_rate.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/boardtricks/boardleap_cnt_subscribers.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/boardtricks/boardleap_dau.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/boardtricks/boardleap_exports.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/boardtricks/boardleap_load_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/boardtricks/boardleap_main.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/boardtricks/boardleap_mau.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/boardtricks/boardleap_refund_rate.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/boardtricks/boardleap_revenue.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/first_launch_funnel/_archive_boardtricks_first_launch_funnel__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/first_launch_funnel/boardleap_android_facetune2_china_first_launch_funnel.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/first_launch_funnel/boardleap_android_facetune2_china_launch.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/first_launch_funnel/boardleap_android_facetune2_first_launch_funnel.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/first_launch_funnel/boardleap_android_facetune2_launch.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/first_launch_funnel/boardleap_android_videoleap_first_launch_funnel.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/first_launch_funnel/boardleap_android_videoleap_launch.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/first_launch_funnel/boardleap_editor_first_launch_funnel.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/first_launch_funnel/boardleap_editor_launch.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/first_launch_funnel/boardleap_first_launch_funnel_top_countries.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/first_launch_funnel/boardleap_first_launch_funnel_top_networks.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/first_launch_funnel/boardleap_ftvideo_first_launch_funnel.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/first_launch_funnel/boardleap_ftvideo_launch.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/first_launch_funnel/boardleap_ios_facetune2_first_launch_funnel.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/first_launch_funnel/boardleap_ios_facetune2_launch.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/first_launch_funnel/boardleap_lightwave_first_launch_funnel.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/first_launch_funnel/boardleap_lightwave_launch.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/first_launch_funnel/boardleap_phoenix_first_launch_funnel.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/first_launch_funnel/boardleap_phoenix_launch.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/first_launch_funnel/boardleap_quickart_first_launch_funnel.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/first_launch_funnel/boardleap_quickshot_first_launch_funnel.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/first_launch_funnel/boardleap_quickshot_launch.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/first_launch_funnel/boardleap_venus_first_launch_funnel.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/first_launch_funnel/boardleap_venus_launch.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/first_launch_funnel/boardleap_videoleap_first_launch_funnel.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/first_launch_funnel/boardleap_videoleap_launch.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks/first_launch_funnel/unified_first_launch_funnel.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks_china/_archive_boardtricks_china__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks_china/boardtricks_china_average_session_time.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks_china/boardtricks_china_monthly_retention.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/boardtricks_china/boardtricks_china_stickness.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/date_spend.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/facetune2_usage_funnel_archive/_archive_facetune2_usage_funnel_archive__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/facetune2_usage_funnel_archive/ft2_uf_devices_archive.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/facetune2_usage_funnel_archive/ft2_uf_feature_started_archive.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/facetune2_usage_funnel_archive/ft2_uf_features_table_with_end_01_archive.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/facetune2_usage_funnel_archive/ft2_uf_features_table_with_subscription_screen_02_archive.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/facetune2_usage_funnel_archive/ft2_uf_meta_app_export_archive.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/facetune2_usage_funnel_archive/ft2_uf_meta_app_foreground_archive.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/facetune2_usage_funnel_archive/ft2_uf_meta_device_sub_archive.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/facetune2_usage_funnel_archive/ft2_uf_meta_device_sub_with_sol_archive.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/facetune2_usage_funnel_archive/ft2_uf_meta_full_meta_data_archive.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/facetune2_usage_funnel_archive/ft2_uf_sub_features_table_archive.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/facetune2_usage_funnel_archive/ft2_uf_subscription_screen_presented_archive.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/facetune2_usage_funnel_global/_archive_facetune2_usage_funnel_global__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/facetune2_usage_funnel_global/ft2_uf_devices_global.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/facetune2_usage_funnel_global/ft2_uf_feature_started_global.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/facetune2_usage_funnel_global/ft2_uf_features_table_with_end_01_global.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/facetune2_usage_funnel_global/ft2_uf_sub_features_table_global.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/_archive_general_archive__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/android_level_1/_archive_general_archive_archive_android_level_1__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/android_level_1/android_transactions_state_old.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/android_level_1/antares_android_subscription_installations.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/android_level_1/antares_android_transactions_state.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/android_level_1/editor_android_subscription_installations.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/android_level_1/editor_android_transactions_state.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/android_level_1/facetune2_android_china_subscription_installations.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/android_level_1/facetune2_android_china_transactions_state.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/android_level_1/facetune2_android_subscription_installations.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/android_level_1/facetune2_android_transactions_state.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/android_level_1/pixaloop_android_subscription_installations.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/android_level_1/pixaloop_android_transactions_state.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/android_level_1/quickshot_android_china_subscription_installations.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/android_level_1/quickshot_android_china_transactions_state.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/android_level_1/quickshot_android_subscription_installations.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/android_level_1/quickshot_android_transactions_state.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/android_level_1/videoleap_android_subscription_installations.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/android_level_1/videoleap_android_transactions_state.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/android_level_2/_archive_general_archive_archive_android_level_2__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/android_level_2/android_subscriptions_state_old.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/android_level_2/antares_android_subscriptions_state.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/android_level_2/editor_android_subscriptions_state.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/android_level_2/facetune2_android_china_subscriptions_state.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/android_level_2/facetune2_android_subscriptions_state.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/android_level_2/pixaloop_android_subscriptions_state.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/android_level_2/quickshot_android_china_subscriptions_state.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/android_level_2/quickshot_android_subscriptions_state.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/android_level_2/videoleap_android_subscriptions_state.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/attirubution/_archive_general_archive_archive_attirubution__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/attirubution/attribution.yml.old" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/attirubution/lnoc_model_attribution/_archive_general_archive_archive_attirubution_lnoc_model_attribution__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/attirubution/lnoc_model_attribution/d_assets_attribution_lnoc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/attirubution/lnoc_model_attribution/d_defacto_attribution_lnoc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/attirubution/lnoc_model_attribution/d_subscriptions_attribution_lnoc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/archive/attirubution/unified_transactions_split_by_usage_attribution.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/ios_devices/_archive_general_archive_ios_devices__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/ios_devices/antares_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/ios_devices/bambi_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/ios_devices/editor_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/ios_devices/facetune1_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/ios_devices/facetune2_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/ios_devices/ftvideo_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/ios_devices/lightwave_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/ios_devices/phoenix_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/ios_devices/quickart_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/ios_devices/quickshot_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/ios_devices/vega_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/ios_devices/venus_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/ios_devices/videoleap_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/ios_usage_attribution/_archive_general_archive_ios_usage_attribution__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/ios_usage_attribution/ios_subscriptions_attribution_likelihood.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/ios_usage_attribution/ios_usage_attribution.yml.old" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/raw_clean_app_opens.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/unified/_archive_general_archive_unified__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/unified/unified_login_archive.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/views/_archive_general_archive_views__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/views/v_leanplum_export.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/views/v_leanplum_export_enriched.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/views/v_subscription_to_defacto.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/general_archive/views/v_unified_otid_idfv_pairs.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/generate_attribution_likelihood_function/_archive_generate_attribution_likelihood_function__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/generate_attribution_likelihood_function/attribution_likelihood_function.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/generate_attribution_likelihood_function/attribution_likelihood_function_smooth.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/nsm/_archive_nsm__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/nsm/country_att_calc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/nsm/inter_active_paid_sub_projects_start_date.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/nsm/inter_active_paid_subscribers.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/nsm/inter_active_subs_kpis.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/nsm/inter_conversion_rate.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/nsm/inter_dates.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/nsm/inter_high_acceptance_rate_features.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/nsm/inter_installs.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/nsm/inter_nsm_tableau_view.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/nsm/inter_paid_subs_activity_rr.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/nsm/inter_paid_subscribers.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/nsm/inter_project_attributes.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/nsm/inter_projects_with_high_acc_feature.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/nsm/inter_subs_retention.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/nsm/nsm_kpis.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/nsm/nsm_tableau_view.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/ulei_archive/_archive_ulei_archive__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/ulei_archive/ulei_att_user_groups_1.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/ulei_archive/ulei_att_user_groups_60.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/ulei_archive/ulei_att_user_groups_90.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/ulei_archive/ulei_att_user_groups_and_devices_1.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/ulei_archive/ulei_att_user_groups_and_devices_60.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/ulei_archive/ulei_att_user_groups_and_devices_90.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/ulei_archive/ulei_att_user_groups_and_subs_1.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/ulei_archive/ulei_att_user_groups_and_subs_60.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/ulei_archive/ulei_att_user_groups_and_subs_90.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/ulei_archive/ulei_att_valid_user_installs_1.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/ulei_archive/ulei_att_valid_user_installs_60.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/ulei_archive/ulei_att_valid_user_installs_90.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/untitled_devices/_archive_untitled_devices__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive/untitled_devices/unified_devices_table.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/leanplum/_archive_mk_leanplum__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/leanplum/leanplum_export_events.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/lp_attributes/_archive_mk_lp_attributes__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/lp_attributes/lp_attributes.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/lp_attributes/lp_attributes.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/lp_attributes/lp_attributes_feed.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/lp_attributes/lp_attributes_lp_user_id_tokens.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/lp_attributes/lp_attributes_lp_user_id_tokens_exist.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/lp_attributes/lp_attributes_lt_id_tokens.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/lp_attributes/lp_attributes_lt_id_tokens_exist.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/lp_attributes/lp_attributes_main_application_step_1.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/lp_attributes/lp_attributes_main_application_step_2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/lp_attributes/lp_attributes_new.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/lp_attributes/lp_attributes_tmp.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/lp_attributes/lp_attributes_updates.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/lp_attributes_csv/_archive_mk_lp_attributes_csv__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/lp_attributes_csv/lp_attributes_lp_user_id_tokens_csv.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/lp_attributes_csv/lp_attributes_lp_user_id_tokens_exist_csv.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/lp_attributes_csv/lp_attributes_main_application_step_1_csv.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/lp_attributes_csv/lp_attributes_main_application_step_2_csv.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/lp_attributes_csv/lp_attributes_no_feed_no_json_notinusenow.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/lp_attributes_csv/lp_attributes_no_feed_no_json_tmp.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/lp_attributes_csv/lp_attributes_with_feed_no_json_notinusenow.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/lp_attributes_csv/lp_attributes_with_feed_no_json_tmp.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/retention/_archive_mk_retention__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/retention/conversion_daily.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/retention/retention_campaign_triggered.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/retention/retention_campaigns.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/retention/retention_daily.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/retention/retention_funnel.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/retention/retention_ids.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/retention/retention_num_of_emails_opened.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/retention/retention_unified_app_foregrounded.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/retention/retention_unified_devices.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/retention/retention_unified_subscriptions_state.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/retention/retention_unified_web_payments.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/retention/retention_user_events_mapping.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/rivery/_archive_mk_rivery__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/rivery/fyber_user_level_data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/skan_user_values/_archive_mk_skan_user_values__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/skan_user_values/daily_run/_archive_mk_skan_user_values_daily_run__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/skan_user_values/daily_run/skan_categorize_current_users_to_tiers.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/skan_user_values/daily_run/skan_tiers_subs_and_revenue.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/skan_user_values/daily_run/todays_auto_renew_on_subs.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/skan_user_values/data_skan_tiers_separation.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/skan_user_values/manual/_archive_mk_skan_user_values_manual__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/skan_user_values/manual/data_skan_tiers_separation_current_status.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/skan_user_values/manual/scores_skan_tiers_separation_current_status.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/skan_user_values/manual/skan_category_seperation_current_status.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/archive_mk/skan_user_values/scores_skan_tiers_separation.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/global/android_global/_global_android_global__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/global/android_global/android_installations_state_global.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/global/android_global/android_subscriptions_installations_global.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/global/android_global/android_subscriptions_state_global.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/global/android_global/android_transactions_state_global.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/global/android_global/android_version_installations_panel_global.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/global/android_global/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/global/global/android_global/android_installations_state_global.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/global/global/android_global/android_subscriptions_installations_global.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/global/global/android_global/android_subscriptions_state_global.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/global/global/android_global/android_transactions_state_global.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/global/global/android_global/android_version_installations_panel_global.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/global/global/android_global/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/global/global/ios_device_global/ios_devices_global.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/global/global/ios_otid_idfv_pairs_global/app_otid_idfv_global.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/global/global/ios_otid_idfv_pairs_global/cloud_kit_global.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/global/global/ios_otid_idfv_pairs_global/otid_idfv_pairs_global.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/global/global/ios_otid_idfv_pairs_global/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/global/ios_device_global/_global_ios_device_global__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/global/ios_device_global/ios_devices_global.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/global/panels_global/_global_panels_global__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/global/panels_global/device_info_log_last_record.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/global/panels_global/device_info_log_panel_global.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/global/unified_app_export.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/griffin/_archive_griffin__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/griffin/payment_sources.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/griffin/payments.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/inter_mas_apps_in_use.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/inter_mas_apps_vu.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/inter_mas_final_first_usage.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/_general_ios_otid_idfv_pairs__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/antares_otid_idfv_pairs.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/app_otid_idfv.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/bambi_otid_idfv_pairs.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/editor_otid_idfv_pairs.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/facetune2_otid_idfv_pairs.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/ftvideo_otid_idfv_pairs.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/lightwave_otid_idfv_pairs.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/otid_idfv/_general_ios_otid_idfv_pairs_otid_idfv__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/otid_idfv/antares_otid_idfv.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/otid_idfv/bambi_otid_idfv.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/otid_idfv/editor_otid_idfv.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/otid_idfv/facetune2_otid_idfv.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/otid_idfv/ftvideo_otid_idfv.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/otid_idfv/lightwave_otid_idfv.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/otid_idfv/phoenix_otid_idfv.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/otid_idfv/product_id.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/otid_idfv/quickart_otid_idfv.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/otid_idfv/quickshot_otid_idfv.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/otid_idfv/vega_otid_idfv.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/otid_idfv/venus_otid_idfv.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/otid_idfv/videoleap_otid_idfv.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/phoenix_otid_idfv_pairs.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/quickart_otid_idfv_pairs.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/quickshot_otid_idfv_pairs.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/unified_otid_idfv_pairs.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/vega_otid_idfv_pairs.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/venus_otid_idfv_pairs.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/ios_otid_idfv_pairs/videoleap_otid_idfv_pairs.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/lei/_general_attribution_lei__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/lei/lei_attribution.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/lei/subs_and_defacto.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/lei/subs_with_foregrounds.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/lei/subs_with_multiple_installs.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/lei/subs_with_one_install.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/lei/subs_without_installs.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/otid_idfv.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/otid_idfv_pairs.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/revenue_projection__1st_day_of_month__archive/archive/_revenue_projection_1st_day_of_month_archive__models.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/revenue_projection__1st_day_of_month__archive/archive/bi_projected_renewals_till_eoy_22.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/revenue_projection__1st_day_of_month__archive/archive/late_predictions.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/revenue_projection__1st_day_of_month__archive/archive/transactions_with_renewals_projections_first_day_of_month.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/subscriptions.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/unified_app_export.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/unified_devices_stas.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/unified_subscriptions_revenue_allocation_evenly.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/unified_subscriptions_state.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/unified_subscriptions_state_with_griffin.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/unified_transactions_revenue_allocation_evenly.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/unified_transactions_state.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms/archive/unified_transactions_state_with_griffin.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/stat_path_repos/dwh-data-model-transforms" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2SWAeZPDBJR5cHC1FgwXuBGmejl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "develop",
+    "last_opened_file_path": "/Users/eeilstein/Desktop/Code/Python/Repos/RepoReader",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="92635ecf-d860-4c54-bc22-ed60222c6035" name="Changes" comment="" />
+      <created>1689252058358</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689252058358</updated>
+      <workItem from="1689252060377" duration="1943000" />
+      <workItem from="1689255397660" duration="5669000" />
+      <workItem from="1689261148751" duration="29925000" />
+    </task>
+    <task id="LOCAL-00001" summary="try solving the loader error">
+      <option name="closed" value="true" />
+      <created>1689261331785</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1689261331785</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="try solving the loader error" />
+    <option name="LAST_COMMIT_MESSAGE" value="try solving the loader error" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/RepoReader$main.coverage" NAME="main Coverage Results" MODIFIED="1689252866709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
